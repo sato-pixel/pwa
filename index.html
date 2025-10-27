@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#0b57d0" />
-<title>PWA サンプル（GitHub Pages）</title>
+<title>PWA サンプル（sato-pixel/pwa｜GitHub Pages）</title>
 <link rel="manifest" href="./manifest.webmanifest" />
 <link rel="icon" href="./icons/icon-192.png" />
 <style>
@@ -15,7 +15,7 @@ button{background:#0b57d0;color:white;padding:1em 1.5em;border:none;border-radiu
 </head>
 <body>
 <h1>📱 ホーム画面に追加できるサンプル</h1>
-<p>このページは GitHub Pages で公開した PWA サンプルです。</p>
+<p>公開URL: <code>https://sato-pixel.github.io/pwa/</code></p>
 
 
 <button id="installButton" hidden>インストール</button>
@@ -23,7 +23,7 @@ button{background:#0b57d0;color:white;padding:1em 1.5em;border:none;border-radiu
 
 
 <script>
-// Service Worker 登録
+// Service Worker 登録（GitHub Pages のサブパス対応: 相対パス指定）
 if ('serviceWorker' in navigator) {
 navigator.serviceWorker.register('./service-worker.js').then(()=>{
 console.log('SW registered');
